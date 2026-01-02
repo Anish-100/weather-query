@@ -23,7 +23,7 @@ class ForwardGeoCodingAPI():
         try:
             request = urllib.request.Request(
                 api_url,
-                headers = {'Referer': 'https://www.ics.uci.edu/~thornton/icsh32/ProjectGuide/Project3/anishpb'},
+                headers = {'Referer': 'Edit this to your custom header, such as the website calling it'},
             )
             response = urllib.request.urlopen(request)
             json_text = response.read().decode(encoding= 'utf-8')
@@ -110,7 +110,7 @@ class WeatherReport:
         try:
             request = urllib.request.Request(
                 api_url,
-                headers = {'User-Agent':'https://www.ics.uci.edu/~thornton/icsh32/ProjectGuide/Project3/, anishpb@uci.edu',
+                headers = {'User-Agent':'WEBSITE NAME, PERSONAL HEADER',
                           'Accept': 'application/geo+json'}
             )
             response = urllib.request.urlopen(request)
@@ -163,7 +163,7 @@ class HourlyReportAPI:
         try:
             request = urllib.request.Request(
                 api_url,
-                headers = {'User-Agent':'https://www.ics.uci.edu/~thornton/icsh32/ProjectGuide/Project3/, anishpb@uci.edu'},
+                headers = {'User-Agent':'WEBSITE NAME, PERSONAL HEADER'},
             )
             response = urllib.request.urlopen(request)
 
@@ -270,7 +270,7 @@ class ReverseGeoCodingAPI:
         try:
             request = urllib.request.Request(
                 api_url,
-                headers = {'Referer': 'https://www.ics.uci.edu/~thornton/icsh32/ProjectGuide/Project3/anishpb'},
+                headers = {'Referer': 'Edit this to your custom header, such as the website calling it'},
             )
             response = urllib.request.urlopen(request)
             json_text = response.read().decode(encoding= 'utf-8')
